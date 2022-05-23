@@ -6,10 +6,11 @@ export class Luchador extends Personaje {
     familia = '',
     edad = 0,
     estado = true,
+    img,
     arma = '',
     destreza = 0
   ) {
-    super(nombre, familia, edad, estado);
+    super(nombre, familia, edad, estado, img);
     this.arma = arma;
     this.destreza = destreza;
   }

@@ -6,10 +6,11 @@ export class Escudero extends Personaje {
     familia = '',
     edad = 0,
     estado = true,
-    sirve = '',
+    img,
+    sirve = new Personaje(),
     pelotismo = 0
   ) {
-    super(nombre, familia, edad, estado);
+    super(nombre, familia, edad, estado, img);
     this.sirve = sirve;
     this.pelotismo = pelotismo;
   }

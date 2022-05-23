@@ -6,9 +6,10 @@ export class Asesor extends Personaje {
     familia = '',
     edad = 0,
     estado = true,
-    asesorado = ''
+    img,
+    asesorado = new Personaje()
   ) {
-    super(nombre, familia, edad, estado);
+    super(nombre, familia, edad, estado, img);
     this.asesorado = asesorado;
   }
   comunicado() {
