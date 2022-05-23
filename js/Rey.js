@@ -1,7 +1,8 @@
 import { Personaje } from './Personaje.js';
 
-class Rey extends Personaje {
-  constructor(reinado = 0) {
+export class Rey extends Personaje {
+  constructor(nombre = '', familia = '', edad = 0, estado = true, reinado = 0) {
+    super(nombre, familia, edad, estado);
     this.reinado = reinado;
   }
   comunicado() {

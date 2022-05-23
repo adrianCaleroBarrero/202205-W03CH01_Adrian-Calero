@@ -1,7 +1,15 @@
 import { Personaje } from './Personaje.js';
 
-class Luchador extends Personaje {
-  constructor(arma = '', destreza = 0) {
+export class Luchador extends Personaje {
+  constructor(
+    nombre = '',
+    familia = '',
+    edad = 0,
+    estado = true,
+    arma = '',
+    destreza = 0
+  ) {
+    super(nombre, familia, edad, estado);
     this.arma = arma;
     this.destreza = destreza;
   }

@@ -1,7 +1,14 @@
 import { Personaje } from './Personaje.js';
 
-class Asesor extends Personaje {
-  constructor(asesorado = '') {
+export class Asesor extends Personaje {
+  constructor(
+    nombre = '',
+    familia = '',
+    edad = 0,
+    estado = true,
+    asesorado = ''
+  ) {
+    super(nombre, familia, edad, estado);
     this.asesorado = asesorado;
   }
   comunicado() {
